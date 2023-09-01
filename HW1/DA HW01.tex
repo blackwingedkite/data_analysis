@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{itemize}
+\item Question 1:  \hfill
+
+The probability of guessing a multiple question right is 0.25. If guessing randomly, the probability of rewarding 16 points is $0.25^4 \times 0.75 \times 5 = 15/1024 $, and the probability of rewarding 20 points is  $0.25^5 = 1/1024 $ . Adding up together, the final answer is \textbf{1/64} .
+
+\item Question 2: \hfill
+
+In this system, if they only play four games, it means that one team has won four games in a row. Since both teams have chances to win in a row, the chance of this series ending in four games is  $p^4 + (1-p)^4$. 
+So, how high is the chance that the system will end with five games? Regardless of which team wins this game, five games means that in the first four games, the winning team has 3 wins and 1 loss. This probability of E winning the game is $C^{4}_{3} \times p^3 \times (1-p) \times p$. The meaning of the last p is that the team E MUST win the last game to win the whole series.  Similarly, the probability of W winning the game is  $C^{4}_{3} \times (1-p)^3 \times p \times (1-p)$
+The answer is $$ 4 \times (p^4 + (1-p)^4) + 5 \times  C^{4}_{3} \times (p^4 \times (1-p) + p \times (1-p)^4)$$
+$$+ 6 \times  C^{5}_{3} \times (p^4 \times (1-p)^2 + p^2 \times (1-p)^4) + 7 \times  C^{6}_{3} \times (p^4 \times (1-p)^3 + p ^3 \times (1-p)^4)$$
+The expected number when p = 1/2 is $$4 \times 1/8 + 5 \times 1/4 + 6 \times 5/16 + 7 \times 5/16$$, which is \  \textbf{93/16}.
+
+\item Question 3: \hfill
+Intuitively, the chances of waiting the show in 20 minutes equals to the chances of arriving the fountain 60 minutes after last show ended. Therefore, the answer is 20/80 = \textbf{1/4}.
+
+\item Question 4: \hfill
+If x is a continuous random variable, its PDF is: $f(x) = \lambda e^(\lambda x), x\ge 0, \lambda \ge 0$, f(x) is exponential distribution, and \lambda is the average amount of events per unit time, which is $\frac{1}{\frac{1}{\mu_1}}$ = $\mu_1$. Therefore, P(x > 10) = e^(-10 \times $\mu_1$). 
+
+
+\item Question 5: \hfill \\
+Since both the bus and the train cost 10 minutes, he only have 10 minutes to waste. We have three circumstances: \\
+\item[1.] The train delays for 4 minutes and the bus delays for less than 6 minutes, which is three standard deviation. It is $\frac{1}{16} \times 49.85 \%$.
+\item[2.]  The train delays for 6 minutes and the bus delays for less than 4 minutes, which is two standard deviation. It is $\frac{1}{8} \times 47.5 \%$.
+\item[3.]  The train delays for 8 minutes and the bus delays for less than 2 minutes, which is one standard deviation. It is$ \frac{1}{2} \times 34 \%$.
+Adding up together, the answer is 26.053 \%
+
+\item Question 6: \hfill \\
+1. False Positive Rate: $99\% \times 1\% = 0.0099$, True Positive Rate:$1\% \times 99\% = 0.0099$ \\
+Answer: 0.0099/(0.0099+0.0099) = \textbf{50\%}  \\
+2. False Positive Rate: $99\% \times 0.1\% = 0.00099$, True Positive Rate:$1\% \times 99.9\% = 0.00999$ \\
+Answer: 0.00999/(0.00099+0.00999) = \textbf{111/122\%} \\
+
+\item Question 7:
+\textbf{B}
+\item Question 8:
+
+\item Question 9:
+
+\item Question 10:
+
+
+\end{itemize}
+\end{document}
